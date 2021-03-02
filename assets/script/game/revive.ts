@@ -1,4 +1,4 @@
-import { _decorator, Component, SpriteComponent, Node, WidgetComponent, LabelComponent } from "cc";
+import { _decorator, Component, SpriteComponent, Node, WidgetComponent, LabelComponent, sys } from "cc";
 import { Constants } from "../data/constants";
 import { PageResult } from "./page-result";
 const { ccclass, property } = _decorator;
@@ -19,8 +19,8 @@ export class Revive extends Component {
     @property(WidgetComponent)
     wgMenu: WidgetComponent = null;
 
-    @property({ type: LabelComponent })
-    scoreHistoryLabel: LabelComponent = null;
+    // @property({ type: LabelComponent })
+    // scoreHistoryLabel: LabelComponent = null;
 
     @property({ type: LabelComponent })
     levelHistoryLabel: LabelComponent = null;
@@ -31,11 +31,11 @@ export class Revive extends Component {
     @property({ type: LabelComponent })
     scoreLabel: LabelComponent = null;
 
-    @property({ type: LabelComponent })
-    progressLabel: LabelComponent = null;
+    // @property({ type: LabelComponent })
+    // progressLabel: LabelComponent = null;
 
-    @property(SpriteComponent)
-    spCountDown: SpriteComponent = null;  //倒计时
+    // @property(SpriteComponent)
+    // spCountDown: SpriteComponent = null;  //倒计时
 
     pageResult: PageResult = null;
     countDownTime: number;
@@ -49,18 +49,15 @@ export class Revive extends Component {
     show() {
         const score = Constants.game.score;
         this.scoreLabel.string = score.toString();
-        if (Constants.MAX_SCORE < score){
-            Constants.MAX_SCORE = score;
-        }
 
-        this.historyLabel.string = Constants.MAX_SCORE.toString();
+        this.historyLabel.string = sys.localStorage.getItem( 'scoreHistory').toString();
 
-        // this.closeCb = closeCallback;
-        this.countDownTime = 5;
-        this.progressLabel.string = this.countDownTime + '';
-        this.currentTime = 0;
-        this.spCountDown.fillRange = 1;
-        this.isCountDowning = true;
+        // // this.closeCb = closeCallback;
+        // this.countDownTime = 5;
+        // this.progressLabel.string = this.countDownTime + '';
+        // this.currentTime = 0;
+        // this.spCountDown.fillRange = 1;
+        // this.isCountDowning = true;
     }
 
     onBtnReviveClick() {
@@ -72,7 +69,7 @@ export class Revive extends Component {
         // uiManager.instance.hideDialog('fight/revive');
     }
 
-    onBtnSkipClick() {
+    onBtnReStartClick() {
         Constants.game.audioManager.playClip();
         this.isCountDowning = false;
         // uiManager.instance.hideDialog('fight/revive');
@@ -83,28 +80,24 @@ export class Revive extends Component {
 
     update(dt: number) {
 
-        console.log("dt ==>" + dt);
+        // if (!this.isCountDowning) {
+        //     return;
+        // }
 
-        if (!this.isCountDowning) {
-            return;
-        }
+        // this.currentTime += dt;
 
-        this.currentTime += dt;
+        // let spare = this.countDownTime - this.currentTime;
+        // this.progressLabel.string = Math.ceil(spare) + '';
+        // if (spare <= 0) {
+        //     spare = 0;
 
-        let spare = this.countDownTime - this.currentTime;
-        this.progressLabel.string = Math.ceil(spare) + '';
-        if (spare <= 0) {
-            spare = 0;
+        //     //触发倒计时结束
+        //     this.isCountDowning = false;
+        //     this.onBtnSkipClick();
+        // }
 
-            //触发倒计时结束
-            this.isCountDowning = false;
-            this.onBtnSkipClick();
-        }
-
-        let percent = spare / this.countDownTime; // 展示百分比
-        this.spCountDown.fillRange = percent;
-
-
+        // let percent = spare / this.countDownTime; // 展示百分比
+        // this.spCountDown.fillRange = percent;
     }
 
 }

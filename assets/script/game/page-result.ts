@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component, Node, sys } from "cc";
 import { Constants } from "../data/constants";
 import { UpdateValueLabel } from "./update-value-label";
 import { Revive } from "./revive";
@@ -99,15 +99,18 @@ export class PageResult extends Component {
 
         //保存最高纪录
         if(availTime<=0){
-            let scoreHistory = cc.sys.localStorage.getItem( 'scoreHistory');
+            let scoreHistory = sys.localStorage.getItem( 'scoreHistory');
             if (!scoreHistory || Number(scoreHistory) < this.targetScore){
-                cc.sys.localStorage.setItem( 'scoreHistory', this.targetScore);
+                sys.localStorage.setItem( 'scoreHistory', this.targetScore);
             }
 
-            let scoreLevel = cc.sys.localStorage.getItem( 'scoreLevel');
+            let scoreLevel = sys.localStorage.getItem( 'scoreLevel');
             if (!scoreLevel || Number(scoreLevel) < this.targetLevel){
-                cc.sys.localStorage.setItem( 'scoreLevel', this.targetLevel);
+                sys.localStorage.setItem( 'scoreLevel', this.targetLevel);
             }
+            
+            this.result.active = true;
+            Constants.game.gameDie();
         }
     }
 

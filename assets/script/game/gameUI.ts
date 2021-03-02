@@ -5,10 +5,10 @@ const { ccclass, property } = _decorator;
 @ccclass("GameUI")
 export class GameUI extends Component {
 
-    @property(Node)
-    pageStart: Node = null;
-    @property(Node)
-    pageResult: Node = null;
+    // @property(Node)
+    // pageStart: Node = null;
+    // @property(Node)
+    // pageResult: Node = null;
 
     shotTimes = 0;
     isShowTips = true;

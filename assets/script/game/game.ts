@@ -67,16 +67,18 @@ export class Game extends Component {
     }
 
     shotLeft(){
-        this.popoManager.shotLeft();
+        if(this.state == Constants.GAME_STATE.PLAYING)
+            this.popoManager.shotLeft();
     }
 
     shotRight(){
-        this.popoManager.shotRight();
+        if(this.state == Constants.GAME_STATE.PLAYING)
+            this.popoManager.shotRight();
     }
 
     resetGame() {
         this.state = Constants.GAME_STATE.READY;
-        this.cameraCtrl.reset();
+        // this.cameraCtrl.reset();
         this.uiManager.showDialog(true);
     }
 
@@ -86,6 +88,7 @@ export class Game extends Component {
         this.state = Constants.GAME_STATE.PLAYING;
         // this.hasRevive = false;
         this.score = 0;
+        this.level = 0;
         this.levelStart();
 
         let reduceAvailableTime = function () {   
@@ -117,13 +120,13 @@ export class Game extends Component {
         this.audioManager.playSound(false);
         this.state = Constants.GAME_STATE.PAUSE;
 
-        if (!this.hasRevive) {
-            this.node.emit(Constants.GAME_EVENT.DYING, ()=>{
-                this.gameOver();
-            });
-        } else {
-            this.gameOver();
-        }
+        // if (!this.hasRevive) {
+        //     this.node.emit(Constants.GAME_EVENT.DYING, ()=>{
+        //         this.gameOver();
+        //     });
+        // } else {
+        //     this.gameOver();
+        // }
     }
 
     gameOver() {
