@@ -1,0 +1,74 @@
+{
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
+  "uuid": "6bd63ce0-1ebb-4d90-8008-af2735b3e846",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "ver": "1.0.20",
+      "importer": "texture",
+      "uuid": "6bd63ce0-1ebb-4d90-8008-af2735b3e846@6c48a",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bd63ce0-1ebb-4d90-8008-af2735b3e846"
+      },
+      "displayName": "shotBtn",
+      "id": "6c48a",
+      "name": "texture"
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "6bd63ce0-1ebb-4d90-8008-af2735b3e846@f9941",
+      "displayName": "shotBtn",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1,
+        "trimX": 4,
+        "trimY": 5,
+        "width": 248,
+        "height": 248,
+        "rawWidth": 256,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6bd63ce0-1ebb-4d90-8008-af2735b3e846@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.8",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "redirect": "6bd63ce0-1ebb-4d90-8008-af2735b3e846@f9941",
+    "hasAlpha": true
+  }
+}
