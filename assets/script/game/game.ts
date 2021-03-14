@@ -85,6 +85,7 @@ export class Game extends Component {
     gameStart(){
         // this.audioManager.playSound();
         this.uiManager.showDialog(false);
+
         this.state = Constants.GAME_STATE.PLAYING;
         // this.hasRevive = false;
         this.score = 0;
@@ -111,8 +112,11 @@ export class Game extends Component {
         this.popoManager.startPlay(_levelData);
 
         this.level++;
-        this.node.emit(Constants.GAME_EVENT.START_LEVEL, this.level);
+        this.node.emit(Constants.GAME_EVENT.START_LEVEL, this.level, _levelData.levelName);
         this.availableTime = this.availableTime + _levelData.rewardTime;
+        if(this.availableTime > 300) {
+            this.availableTime = 300;
+        }
         this.node.emit(Constants.GAME_EVENT.AVAILABLE_TIME, this.availableTime);
     }
 

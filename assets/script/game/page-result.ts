@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, sys } from "cc";
+import { _decorator, Component, Node, sys, view, log, Vec3, ProgressBar } from "cc";
 import { Constants } from "../data/constants";
 import { UpdateValueLabel } from "./update-value-label";
 import { Revive } from "./revive";
@@ -17,10 +17,24 @@ export class PageResult extends Component {
     scoreLabel: UpdateValueLabel = null;
     
     @property({ type: UpdateValueLabel })
+    scoreLabel_title: UpdateValueLabel = null;
+    
+    @property({ type: UpdateValueLabel })
     levelLabel: UpdateValueLabel = null;
 
     @property({ type: UpdateValueLabel })
-    availableTimeLabel: UpdateValueLabel = null;
+    levelLabel_title: UpdateValueLabel = null;
+
+    @property(Node)
+    progressBarLayout: Node = null;
+    // @property({ type: UpdateValueLabel })
+    // availableTimeLabel: UpdateValueLabel = null;
+
+    @property({ type: ProgressBar })
+    availableTimeProgressBar: ProgressBar = null;
+
+    @property({ type: UpdateValueLabel })
+    availableTimeLabel_title: UpdateValueLabel = null;
 
     targetScore: number = 0;
     targetLevel: number = 0;
@@ -39,19 +53,46 @@ export class PageResult extends Component {
     result: Node = null;
 
     init() {
+        let windowSize=view.getVisibleSize();
+        log("width="+windowSize.width+",height="+windowSize.height);
+
         this.targetScore = 0;
         this.targetLevel = 0;
         this.availableTime = 0;
 
+        // let adjust = (windowSize.height - 1707)/2;
+
+        // log("scoreLabel().y="+this.scoreLabel.node.getPosition().y);
+        // log("availableTimeLabel().y="+this.availableTimeLabel.node.getPosition().y);
+
+        // this.scoreLabel.node.setPosition(new Vec3(this.scoreLabel.node.getPosition().x,
+        //                                         0 - windowSize.height/2 + 200,
+        //                                         this.scoreLabel.node.getPosition().z));
+
+        this.adjustLable(this.progressBarLayout,0 - windowSize.height/2 + 160);
+        this.adjustLable(this.availableTimeLabel_title.node,0 - windowSize.height/2 + 190);
+
+        this.adjustLable(this.levelLabel.node,0 - windowSize.height/2 + 260);
+        this.adjustLable(this.levelLabel_title.node,0 - windowSize.height/2 + 260);
+
+        this.adjustLable(this.scoreLabel.node,0 - windowSize.height/2 + 260);
+        this.adjustLable(this.scoreLabel_title.node,0 - windowSize.height/2 + 260);
+
         this.scoreLabel.playUpdateValue(this.targetScore, this.targetScore, 0);
-        this.levelLabel.playUpdateValue(this.targetLevel, this.targetLevel, 0);        
-        this.availableTimeLabel.playUpdateValue(this.availableTime, this.availableTime, 0);
+        // this.levelLabel.playUpdateValue(this.targetLevel, this.targetLevel, 0);        
+        // this.availableTimeLabel.playUpdateValue(this.availableTime, this.availableTime, 0);
 
         this.scoreLabel.isPlaying = false;
         this.leftBtnTips.active = false;
         this.rightBtnTips.active = false;
 
         // this.result.active = true;
+    }
+
+    adjustLable(node : Node,adjust : number) {
+        node.setPosition(new Vec3(node.getPosition().x,
+        adjust,
+        node.getPosition().z));
     }
 
     onEnable() {
@@ -62,7 +103,7 @@ export class PageResult extends Component {
         Constants.game.node.on(Constants.GAME_EVENT.AVAILABLE_TIME, this.showAvailTime, this);
         Constants.game.node.on(Constants.GAME_EVENT.DYING, this.gameDie, this);
 
-        this.showTips(true);
+        // this.showTips(true);
         this.showResult(false);
         this.init();
     }
@@ -86,16 +127,20 @@ export class PageResult extends Component {
         this.scoreLabel.playUpdateValue(curProgress, this.targetScore, (this.targetScore - curProgress) / 20);
     }
 
-    levelUp(level: number) {
+    levelUp(level: number,levelName: string) {
         this.targetLevel = level;
         let curProgress = Number(this.levelLabel.string);
-        this.levelLabel.playUpdateValue(curProgress, this.targetLevel, (this.targetLevel - curProgress) / 20);
+        // this.levelLabel.playUpdateValue(curProgress, this.targetLevel, (this.targetLevel - curProgress) / 20);
+        this.levelLabel.string = levelName;
     }
 
     showAvailTime(availTime: number) {
         this.availableTime = availTime;
-        let curProgress = Number(this.availableTimeLabel.string);
-        this.availableTimeLabel.playUpdateValue(curProgress, this.availableTime, (this.availableTime - curProgress) / 200);
+        // let curProgress = Number(this.availableTimeLabel.string);
+        // this.availableTimeLabel.playUpdateValue(curProgress, this.availableTime, (this.availableTime - curProgress) / 200);
+
+        // log("availTime/300 ==>" + availTime/300);
+        this.availableTimeProgressBar.progress = availTime/300;
 
         //保存最高纪录
         if(availTime<=0){

@@ -12,6 +12,8 @@ export class UIManager extends Component {
     pageStart: Node = null;
     @property(Node)
     pageResult: Node = null;
+    
+    isInit = false;
 
     onLoad(){
         Constants.game.uiManager = this;
@@ -26,7 +28,10 @@ export class UIManager extends Component {
         this.pageStart.active = isMain;
 
         if(!isMain) {
-            Constants.game.node.emit(Constants.GAME_EVENT.SHOWTIPS,true);
+            if(!this.isInit) {
+                Constants.game.node.emit(Constants.GAME_EVENT.SHOWTIPS,true);
+                this.isInit = true;
+            }
         }
     }
 

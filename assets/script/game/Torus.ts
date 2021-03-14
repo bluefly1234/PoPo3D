@@ -27,6 +27,8 @@ export class Torus extends Component {
 
     forceScalar = 0;
 
+    isInGoal = false;
+
     @property(Material)
     redMaterial: Material = null;
 
@@ -47,7 +49,8 @@ export class Torus extends Component {
             this.node.getComponent(MeshRenderer).setMaterial(this.yellowMaterial,0);
         } else if(_torusData.color == 2){
             this.node.getComponent(MeshRenderer).setMaterial(this.greenMaterial,0);
-        }        
+        }    
+        this.isInGoal = false;    
     }
 
     initByPos(pos: Vec3) {           
@@ -90,7 +93,10 @@ export class Torus extends Component {
     TriggerEnter(event: ITriggerEvent) {
         // log('PopoManager', 'TriggerEnter :' + event.otherCollider.getGroup());
         if(event.otherCollider.getGroup() == Constants.PHY_GROUP.GroupGoal){
-            this.goal();
+            if(!this.isInGoal) {
+                this.goal();
+                this.isInGoal = true; 
+            }
         }
     }
 
@@ -108,7 +114,7 @@ export class Torus extends Component {
         Constants.game.audioManager.playGoal();
         Constants.game.addScore(Constants.TORUS_SCORE);
         this.forceScalar = INGOAL_FORCESCALAR;
-        this.node.getComponentInChildren(ColliderComponent).setGroup(Constants.PHY_GROUP.GroupInGoal);
+        // this.node.getComponentInChildren(ColliderComponent).setGroup(Constants.PHY_GROUP.GroupInGoal);
     }
 
     update() {

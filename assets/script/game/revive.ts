@@ -31,6 +31,9 @@ export class Revive extends Component {
     @property({ type: LabelComponent })
     scoreLabel: LabelComponent = null;
 
+    @property({ type: LabelComponent })
+    levelLabel: LabelComponent = null;
+
     // @property({ type: LabelComponent })
     // progressLabel: LabelComponent = null;
 
@@ -50,7 +53,11 @@ export class Revive extends Component {
         const score = Constants.game.score;
         this.scoreLabel.string = score.toString();
 
+        const level = Constants.game.level;
+        this.levelLabel.string = level.toString();
+
         this.historyLabel.string = sys.localStorage.getItem( 'scoreHistory').toString();
+        this.levelHistoryLabel.string = sys.localStorage.getItem( 'scoreLevel').toString();
 
         // // this.closeCb = closeCallback;
         // this.countDownTime = 5;

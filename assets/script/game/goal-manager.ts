@@ -15,15 +15,15 @@ export class GoalManager extends Component {
     // @property({ type: ColliderComponent, tooltip: '投中碰撞组件' })
     // colliderComponent_goalPrefab: ColliderComponent = null;
 
-    @property({ type: ColliderComponent, tooltip: '投中碰撞组件' })
-    colliderComponent_goal01: ColliderComponent = null;
+    // @property({ type: ColliderComponent, tooltip: '投中碰撞组件' })
+    // colliderComponent_goal01: ColliderComponent = null;
 
-    @property({ type: ColliderComponent, tooltip: '投中碰撞组件' })
-    colliderComponent_goal02: ColliderComponent = null;
+    // @property({ type: ColliderComponent, tooltip: '投中碰撞组件' })
+    // colliderComponent_goal02: ColliderComponent = null;
 
     start () {        
-        this.colliderComponent_goal01.setGroup(Constants.PHY_GROUP.GroupGoal);
-        this.colliderComponent_goal02.setGroup(Constants.PHY_GROUP.GroupGoal);
+        // this.colliderComponent_goal01.setGroup(Constants.PHY_GROUP.GroupGoal);
+        // this.colliderComponent_goal02.setGroup(Constants.PHY_GROUP.GroupGoal);
 
         // this.colliderComponent_goalPrefab.setGroup(Constants.PHY_GROUP.GroupGoal);
     }

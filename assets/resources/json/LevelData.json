@@ -2,7 +2,7 @@
     "version" : "0.1",
     "level": [
         {
-            "levelName": "level1",
+            "levelName": "Level 1",
             "torusList": [
                 {
                     "x": -22,
@@ -56,11 +56,11 @@
                 }
             ],
             "rewardScore": 20,
-            "rewardTime": 20,
+            "rewardTime": 300,
             "rewardScorePreSecond": 20
         },
         {
-            "levelName": "level2",
+            "levelName": "Level 2",
             "torusList": [
                 {
                     "x": -22,
@@ -114,11 +114,11 @@
                 }
             ],
             "rewardScore": 20,
-            "rewardTime": 240,
+            "rewardTime": 200,
             "rewardScorePreSecond": 20
         },
         {
-            "levelName": "level3",
+            "levelName": "Level 3",
             "torusList": [
                 {
                     "x": -22,
@@ -172,11 +172,11 @@
                 }
             ],
             "rewardScore": 20,
-            "rewardTime": 200,
+            "rewardTime": 180,
             "rewardScorePreSecond": 20
         },
         {
-            "levelName": "level4",
+            "levelName": "Level 4",
             "torusList": [
                 {
                     "x": -22,
@@ -232,6 +232,1514 @@
             "rewardScore": 20,
             "rewardTime": 160,
             "rewardScorePreSecond": 20
-        }       
+        },
+        {
+            "levelName": "Level 5",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 125,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 6",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 115,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 7",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 100,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 8",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 80,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 9",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": -10,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 60,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 10",
+            "torusList": [
+                {
+                    "x": 9,
+                    "y": 10,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 24,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 38,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 10,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 24,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": 38,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 50,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 11",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": 6,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 50,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 12",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 6,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 45,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 13",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": -5,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": -5,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 40,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 14",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": 10,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 10,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 35,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 15",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 35,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 16",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 35,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 17",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 30,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 18",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 30,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 19",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": -10,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 30,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 20",
+            "torusList": [
+                {
+                    "x": 9,
+                    "y": 10,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 24,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 38,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 10,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 24,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": 38,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 30,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 21",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": 6,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 25,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 22",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 6,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 25,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 23",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": -5,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": -5,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 20,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 24",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [                
+                {
+                    "x": 9,
+                    "y": 10,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 10,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 20,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 25",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 22,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -15,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": -18,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 20,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 26",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 0,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 15,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 27",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -10,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 15,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 28",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 10,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 29",
+            "torusList": [
+                {
+                    "x": -22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": -6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 6,
+                    "y": -25,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": 14,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": 22,
+                    "y": -25,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 20,
+                    "y": 22,
+                    "z": 0,
+                    "color": 0
+                },
+                {                    
+                    "x": -20,
+                    "y": -10,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 10,
+            "rewardScorePreSecond": 20
+        },
+        {
+            "levelName": "Level 30",
+            "torusList": [
+                {
+                    "x": 9,
+                    "y": 10,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 24,
+                    "z": 0,
+                    "color": 1
+                },
+                {
+                    "x": 9,
+                    "y": 38,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 10,
+                    "z": 0,
+                    "color": 2
+                },
+                {
+                    "x": -10,
+                    "y": 24,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": 38,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "goalList": [
+                {
+                    "x": 9,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                },
+                {
+                    "x": -10,
+                    "y": -20,
+                    "z": 0,
+                    "color": 0
+                }
+            ],
+            "rewardScore": 20,
+            "rewardTime": 50,
+            "rewardScorePreSecond": 20
+        }    
     ]
 }
